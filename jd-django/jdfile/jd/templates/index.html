@@ -1,0 +1,35 @@
+<html>
+    <head>
+    <title>京东商城</title>
+    </head>
+    <body>
+       <font color="#FF0000" size="20px"><center> 京东搜笔记本</center></font>
+   
+    <table border="2" align="center">
+        <tr>
+            <td width="100" id="title">序号</td>
+            <td width="100" goods_id="title">商品编号</td>
+            <td width="100" link="title">链接</td>
+            <td width="100" goods_name="title">商品名</td>
+            <td width="100" shop_name="title">商店名</td>
+            <td width="100" price="title">价格</td>
+            <td width="100" comments="title">评论数</td>
+
+        </tr>
+
+    
+        {% for i in order %}
+        <tr>  
+            <td width="100">{{i.0}}</td>  
+            <td width="100">{{i.1}}</td>  
+            <td width="100">{{i.2}}</td> 
+            <td width="100">{{i.3}}</td> 
+            <td width="100">{{i.4}}</td> 
+            <td width="100">{{i.5}}</td>  
+            <td width="100">{{i.6}}</td> 
+        </tr>
+        {% endfor %}           
+
+    </table>
+    </body>
+</html>
